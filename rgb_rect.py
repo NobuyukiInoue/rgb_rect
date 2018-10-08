@@ -4,6 +4,7 @@ import pygame
 from pygame.locals import *
 import random
 import sys
+from time import sleep
 
 class colorData:
     """各三原色の明るさを管理するクラス"""
@@ -59,6 +60,7 @@ def main():
         # Blue
         pygame.draw.rect(screen, (0, 0, blue.Color()), Rect(333, 300, 67, 100))
 
+        sleep(0.01)
         # 次に描画する明るさをセットする
         red.nextColor()
         green.nextColor()
