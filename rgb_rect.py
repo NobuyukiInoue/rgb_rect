@@ -1,4 +1,4 @@
-# 光の三原色とその組み合わせを３つの四角形で表現する
+# 光の三原色とその組み合わせを３つの四角形の重ね合わせで表現する
 # -*- coding: utf-8 -*-
 import pygame
 from pygame.locals import *
