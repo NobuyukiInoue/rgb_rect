@@ -39,26 +39,26 @@ def main():
     blue = colorData()
 
     while True:
-        screen.fill((0, 0, 0))
+        screen.fill((255, 255, 255))
 
         # Red
-        pygame.draw.rect(screen, (red.Color(), 0, 0), Rect(200, 100, 200, 100))
+        pygame.draw.rect(screen, (255 - red.Color(), 255, 255), Rect(200, 100, 200, 100))
         # Green
-        pygame.draw.rect(screen, (0, green.Color(), 0), Rect(133, 200, 67, 200))
+        pygame.draw.rect(screen, (255, 255 - green.Color(), 255), Rect(133, 200, 67, 200))
         # Blue
-        pygame.draw.rect(screen, (0, 0, blue.Color()), Rect(400, 200, 67, 200))                
+        pygame.draw.rect(screen, (255, 255, blue.Color()), Rect(400, 200, 67, 200))                
         # Yellow
-        pygame.draw.rect(screen, (red.Color(), green.Color(), 0), Rect(200, 200, 67, 100))
+        pygame.draw.rect(screen, (255 - red.Color(), 255 - green.Color(), 255), Rect(200, 200, 67, 100))
         # White
-        pygame.draw.rect(screen, (red.Color(), green.Color(), blue.Color()), Rect(267, 200, 67, 100))
+        pygame.draw.rect(screen, (255 - red.Color(), 255 - green.Color(), 255 - blue.Color()), Rect(267, 200, 67, 100))
         # Magenta
-        pygame.draw.rect(screen, (red.Color(), 0, blue.Color()), Rect(333, 200, 67, 100))
+        pygame.draw.rect(screen, (255 - red.Color(), 255, 255 - blue.Color()), Rect(333, 200, 67, 100))
         # Green
-        pygame.draw.rect(screen, (0, green.Color(), 0), Rect(200, 300, 100, 100))
+        pygame.draw.rect(screen, (255, 255 - green.Color(), 255), Rect(200, 300, 100, 100))
         # Sky
-        pygame.draw.rect(screen, (0, green.Color(), blue.Color()), Rect(267, 300, 67, 100))
+        pygame.draw.rect(screen, (255, 255 - green.Color(), 255 - blue.Color()), Rect(267, 300, 67, 100))
         # Blue
-        pygame.draw.rect(screen, (0, 0, blue.Color()), Rect(333, 300, 67, 100))
+        pygame.draw.rect(screen, (255, 255, 255 - blue.Color()), Rect(333, 300, 67, 100))
 
         sleep(0.01)
         # 次に描画する明るさをセットする
