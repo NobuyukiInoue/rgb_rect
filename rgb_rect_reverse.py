@@ -32,7 +32,7 @@ def main():
     pygame.init()
     SCREEN_SIZE = (640, 480)
     screen = pygame.display.set_mode(SCREEN_SIZE)
-    pygame.display.set_caption(u"光の三原色")
+    pygame.display.set_caption(u"色の三原色")
 
     red = colorData()
     green = colorData()
@@ -46,7 +46,7 @@ def main():
         # Green
         pygame.draw.rect(screen, (255, 255 - green.Color(), 255), Rect(133, 200, 67, 200))
         # Blue
-        pygame.draw.rect(screen, (255, 255, blue.Color()), Rect(400, 200, 67, 200))                
+        pygame.draw.rect(screen, (255, 255, 255 - blue.Color()), Rect(400, 200, 67, 200))                
         # Yellow
         pygame.draw.rect(screen, (255 - red.Color(), 255 - green.Color(), 255), Rect(200, 200, 67, 100))
         # White
